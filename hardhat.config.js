@@ -17,7 +17,7 @@ const privateKey = fs.readFileSync(".secret").toString().trim || "01234567890123
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
-module.exports = {
+ module.exports = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
@@ -32,9 +32,9 @@ module.exports = {
     version: "0.8.4",
     settings: {
       optimizer: {
-        enable: true,
+        enabled: true,
         runs: 200
       }
     }
   }
-};
+}
